@@ -1,0 +1,31 @@
+{
+  "name": "stencil-source-map-error",
+  "private": true,
+  "version": "0.0.1",
+  "description": "stencil-source-map-error",
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build --log --debug",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watch",
+    "generate": "stencil generate"
+  },
+  "devDependencies": {
+    "@ionic/core": "^6.0.0",
+    "@stencil/core": "^2.13.0",
+    "@stencil/helmet": "^0.3.2",
+    "@types/jest": "^27.0.3",
+    "jest": "^27.4.5",
+    "jest-cli": "^27.4.5",
+    "puppeteer": "^10.0.0"
+  },
+  "dependencies": {
+    "@stencil/sass": "^1.5.2",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "workbox-build": "6.5.3"
+  }
+}
