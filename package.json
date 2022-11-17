@@ -26,6 +26,7 @@
   "dependencies": {
     "@stencil/sass": "^1.5.2",
     "rollup-plugin-node-polyfills": "^0.2.1",
+    "rxjs": "^7.5.7",
     "workbox-build": "6.5.3"
   }
 }

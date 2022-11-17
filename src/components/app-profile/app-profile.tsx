@@ -11,7 +11,7 @@ export class AppProfile {
 
   formattedName(): string {
     if (this.name) {
-      return this.name.substr(0, 1).toUpperCase() + this.name.substr(1).toLowerCase();
+      return this.name.substring(0, 1).toUpperCase() + this.name.substring(1).toLowerCase();
     }
     return '';
   }
@@ -36,6 +36,17 @@ export class AppProfile {
           <ion-label>Setting ({this.state.toString()})</ion-label>
           <ion-toggle checked={this.state} onIonChange={ev => (this.state = ev.detail.checked)} />
         </ion-item>
+
+        <ion-button href="/profile/test" expand="block">
+          Profile page 2
+        </ion-button>
+        <ion-button href="/profile/test2" expand="block">
+          Profile page 3
+        </ion-button>
+        <ion-button href="/profile/test3" expand="block">
+          Profile page 3
+        </ion-button>
+
       </ion-content>,
     ];
   }

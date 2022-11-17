@@ -1,0 +1,10 @@
+page-header-loading {
+  div {
+    width: 100%;
+
+    ion-progress-bar {
+      z-index: 999;
+      height: 2px;
+    }
+  }
+}
